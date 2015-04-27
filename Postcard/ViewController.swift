@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var enterNameTextField: UILabel!
+    @IBOutlet weak var senderName: UILabel!
     @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButton: UIButton!
-   
+   //Users/Kevin/Desktop/Postcard/Postcard/Base.lproj/Main.storyboard
     
     
     override func viewDidLoad() {
@@ -31,6 +31,11 @@ class ViewController: UIViewController {
        messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.redColor()
+        
+        senderName.hidden = false
+        senderName.text = senderName.text
+        senderName.textColor = UIColor.blueColor()
+
         //Adding some comments on Git actions
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
